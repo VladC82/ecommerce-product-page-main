@@ -34,4 +34,4 @@ mobileMenu.addEventListener("click", Mobilemenu);
 overlay.addEventListener("click", Mobilemenu);
 cancelBtn.addEventListener("click", Mobilemenu);
 
-console.log(orderNumber)
+console.log(orderNumber);
