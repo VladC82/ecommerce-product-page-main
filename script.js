@@ -21,3 +21,17 @@ const addItem = document.getElementById("add");
 const cartIcon = document.getElementById("cart");
 const delBtn = document.getElementById("delete");
 const cancelBtn = document.getElementById("cancel");
+
+//for mobile menu
+functionMobilemenu(params) {
+    navMenu.classList.toggle("hidden");
+    overlay.classList.toggle("hidden");
+    cartMessages.classList.add("hidden");
+    controlCarousel.classList.remove("visible")
+    controlCarousel.classList.add("lg:hidden")
+}
+mobileMenu.addEventListener("click", Mobilemenu);
+overlay.addEventListener("click", Mobilemenu);
+cancelBtn.addEventListener("click", Mobilemenu);
+
+console.log(orderNumber)
