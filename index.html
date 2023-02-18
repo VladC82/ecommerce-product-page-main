@@ -9,5 +9,33 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!--<link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              orange: "FF7D1A",
+              paleorange: "#FFEDE0",
+              verydarkblue: "#1D2025",
+              darkgrayblue: "#68707D",
+              lightgrayblue: "#F7F8FD",
+              white: "#FFFFFF",
+              black: "#000000",
+              blackrgba: "rgba(0, 0, 0, 0.3)",
+            },
+            fontFamily: {
+              kumbh: ["Kumbh Sans", "sans-serif"],
+            },
+            backgroundImage: {
+              "hero-pattern": "url(images/bg-main-desktop.png)",
+              "mobile-pattern": "url(images/bg-main-mobile.png)",
+            },
+          },
+        },
+      };
+    </script>
   </head>
 </html>
