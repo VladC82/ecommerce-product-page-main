@@ -51,7 +51,7 @@
          <div class="absolute top-2 text-2xl z-50">
            <button class="close-modal text-4xl lg:hidden" id="cancel">&times;</button>
          </div>
-         <a class="mr-5 hover:border-b-4 hover:border-b-orange hover:text-black hover:font-bold text-black lg:mt-4">Collections</a>
+                <a class="mr-5 hover:border-b-4 hover:border-b-orange hover:text-black hover:font-bold text-black">Collections</a>
                 <a class="mr-5 hover:border-b-4 hover:border-b-orange hover:text-black hover:font-bold text-black">Men</a>
                 <a class="mr-5 hover:border-b-4 hover:border-b-orange hover:text-black hover:font-bold text-black">Women</a>
                 <a class="mr-5 hover:border-b-4 hover:border-b-orange hover:text-black hover:font-bold text-black">About</a>
@@ -61,9 +61,236 @@
           <button class="inline-flex items-center  border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 "  id="cart">
             <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
           </button>
-          <img src="images\image-avatar.png" alt="" class="lg:w-10 w-10 mt-3 active:border-orange hover:cursor-pointer active:opacity-80  hover:border-2 rounded-full">
+          <img src="images/image-avatar.png" alt="" class="lg:w-10 w-10 mt-3 active:border-orange hover:cursor-pointer active:opacity-80  hover:border-2 rounded-full">
         </div>
       </div>
     </header>
+
+    <section class="bg-blac lg:w-3/4 mx-auto lg:mt-14 lg:p-0 ">
+      <div class="flex lg:flex-row lg:space-x-40  flex-col space-y-1 pb-6" >
+        <div class="space-y-4 lg:block hidden" id="lgscreendiv">
+          <div class="" >
+            <img src="images/image-product-1.jpg" alt="" class="w-96 rounded-lg">
+          </div>
+          <div class="flex flex-row space-x-6">
+            <button class="image-click">
+               <img src="images/image-product-1-thumbnail.jpg" alt="" class="w-20 rounded-lg active:border-4 active:border-orange hover:cursor-pointer active:opacity-80">
+            </button>
+            <button class="image-click">
+              <img src="images/image-product-2-thumbnail.jpg" alt="" class="w-20 rounded-lg active:border-4 active:border-orange hover:cursor-pointer active:opacity-80">
+           </button>
+           <button class="image-click">
+            <img src="images/image-product-3-thumbnail.jpg" alt="" class="w-20 rounded-lg active:border-4 active:border-orange hover:cursor-pointer active:opacity-80">
+         </button><button class="image-click" >
+          <img src="images/image-product-4-thumbnail.jpg" alt="" class="w-20 rounded-lg active:border-4 active:border-orange hover:cursor-pointer active:opacity-80">
+       </button>
+    </div>
+
+ </div>
+
+ <div id="controls-carousel" class="relative lg:hidden lg:top-48 lg:bottom-80 lg:w-96 lg:absolute lg:z-40 lg:left-1/3" data-carousel="static">
+  <div class="relative h-96 overflow-hidden lg:rounded-lg md:h-96 lg:z-50 " >
+    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="" id="image-click">
+      <img src="images/image-product-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+
+    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10 " data-carousel-item="active">
+      <img src="images/image-product-1-thumbnail.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+
+    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+      <img src="images/image-product-2-thumbnail.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+
+    <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform" data-carousel-item="">
+      <img src="images/image-product-3-thumbnail.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform" data-carousel-item="">
+       <img src="images/image-product-4-thumbnail.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+</div>
+
+<button type="button" class="absolute top-0 left-0 z-20 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none lg:z-50 lg:top-10" data-carousel-prev="">
+  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full  dark:bg-white group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+      <span class="sr-only">Previous</span>
+  </span>
+</button>
+
+<button type="button" class="absolute top-0 right-0 z-20 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none lg:z-50 lg:top-10" data-carousel-next="">
+  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white  group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      <span class="sr-only">Next</span>
+  </span>
+</button>
+ </div>
+
+ <div class="font-kumbh space-y-4 mt-8 w-11/12 mx-auto lg:w-auto">
+  <div class="flex flex-col space-y-6">
+   <h2 class="text-orange font-bold tracking-wider lg:mt-0 mt-6 lg:text-xl text-md">SNEAKER COMPANY</h2>
+   <h6 class="text-3xl font-bold">Fall Limited Edition <br> sneakers</h6>
+  </div>
+
+  <div class="">
+    <p class="lg:mt-6 text-md mt-4">
+      These low-profile sneakers are your perfect <br class="hidden"> casual wear <br class="hidden lg:block"> companion. Featuring a 
+durable <br class="lg:block hidden"> rubber  outer sole, they’ll <br class="hidden lg:block"> withstand everything <br class="lg:hidden"> the weather can offer.
+    </p>
+   </div>
+
+   <div class="flex flex-row space-x-6 mt-6 ">
+    <h3 class="text-2xl font-bold tracking-wide lg:mt-0">$125.00</h3>
+    <button class="font-bold text-orange border px-4 bg-paleorange text-sm rounded-lg">
+       <p class="">50%</p>
+    </button>
+
+    <div>
+      <h1 class="text-md font-bolder opacity-50 block lg:hidden"><del>$250.00</del></h1>
+    </div>
+
+   </div>
+
+   <div class="lg:block hidden">
+    <h1 class="text-md font-bolder opacity-50"><del>$250.00</del></h1>
+  </div>
+
+  <div class="flex lg:flex-row lg:space-x-6 flex-col">
+    <div class="bg-paleorange flex flex-row  space-x-32 rounded-md lg:px-8 mt-6 py-3 lg:py-0">
+      <button class="flex-initial  ml-6"  id="substract">
+      <svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
+    </button>
+
+    <div class="fle  lg:w-16 text-center justify-center w-10">
+      <span class="lg:mt-1 cartnumber text-4xl">0</span>
+       </div>
+
+       <button class="mr-6" id="add">
+        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
+       </button>
+    </div>
+
+    <div class="flex flex-row border bg-orange px-8 lg:py-2 rounded text-white lg:space-x-2 font-kumbh font-bold mt-6 active:opacity-60 py-4 shadow-rgba shadow-2xl">
+      <div class="mx-auto flex flex-row space-x-2">
+
+        <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+         
+        <button class="bg-orange" id="addtocart">
+          <h2>Add to cart</h2>  
+        </button>
+            
+      </div>   
+
+      </div>
+
+  </div> 
+     
+  </div>
+
+      </div>
+
+    </section>
+
+    <div class="flex bg-black justify-center">
+      <main class="absolute lg:right-60 lg:p-4 lg:top-20 bg-white shadow-blackrgba shadow-xl rounded-lg z-50 p-2 top-28 mx-auto hidden justify-center" id="cartmodal">
+  
+        <div class="w-11/12 mx-auto">
+          <h2 class="border-b-2 font-bold text-xl font-kumbh ml">Cart</h2>
+        </div>
+       
+        <div class="flex flex-col space-y-6  mx-auto " >
+       
+      
+          <div class="flex flex-row space-x-7 mt-8 ml-4 hidden" id="modal">
+             <div >
+              <img src="images\image-product-1-thumbnail.jpg" alt="" class="w-16 h-auto rounded-lg">
+             </div>
+      
+             <div class="flex flex-col font-kumbh">
+              <div>Autumn Limited edition...</div>
+              <div> $<span class="" id="price">125.00</span> x <span class="cartnumber">0</span> $ <span class="font-bold " id="total">375.00</span></div>
+             </div>
+      
+             <button class="mt-2" id="delete">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+      width="24" height="24"
+      viewBox="0 0 24 24"
+      style=" fill:#000000;"><path d="M 10 2 L 9 3 L 3 3 L 3 5 L 4.109375 5 L 5.8925781 20.255859 L 5.8925781 20.263672 C 6.023602 21.250335 6.8803207 22 7.875 22 L 16.123047 22 C 17.117726 22 17.974445 21.250322 18.105469 20.263672 L 18.107422 20.255859 L 19.890625 5 L 21 5 L 21 3 L 15 3 L 14 2 L 10 2 z M 6.125 5 L 17.875 5 L 16.123047 20 L 7.875 20 L 6.125 5 z"></path></svg>
+             </button>
+      
+      
+          </div>
+      
+          
+          <div class="text-xl font-kumbh mx-auto p-14" id="emptymessage">
+            <h2>your cart is empty</h2>
+          </div>
+      
+           <div class="bg-orange w-11/12 text-center mx-auto py-4 rounded-lg hidden" id="checkout">
+            <button class="text-white text-xl font-kumbh font-bold">
+              Checkout
+            </button>
+           </div>
+      
+        </div>
+         
+      </main>  
+      
+    </div>
+  
+  <div class="absolute lg:right-72 lg:top-4 top-0 right-14 mt-4 lg:mt-0 hidden" id="cartdiv">
+    <h class="bg-orange rounded-full px-2 py- h-6 cartnumber">0</h>
+  </div>
+  
+  
+  <!--OVELAY DIV-->
+  <div class="absolute w-full h-full top-0 left-0 bg-blackrgba  hidden  backdrop-blur-sm z-20" id="overlay"></div>
+  
+  
+  
+  <footer class="mt-6">
+    <div class="flex ">
+      <h1 class="mx-auto text-xl font-kumbh font-bolder ">
+        made by <a href="https://twitter.com">Vlad</a>
+      </h1>
+    </div>
+  
+  
+    <div class="flex justify-center space-x-4 mt-2 pb-12">
+      <a href="https://twitter.com">
+  
+        <!--FOR TWITTER-->
+        <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="24" height="24"
+  viewBox="0 0 64 64"
+  style=" fill:#000000;"><path d="M61.932,15.439c-2.099,0.93-4.356,1.55-6.737,1.843c2.421-1.437,4.283-3.729,5.157-6.437	c-2.265,1.328-4.774,2.303-7.444,2.817C50.776,11.402,47.735,10,44.366,10c-6.472,0-11.717,5.2-11.717,11.611	c0,0.907,0.106,1.791,0.306,2.649c-9.736-0.489-18.371-5.117-24.148-12.141c-1.015,1.716-1.586,3.726-1.586,5.847	c0,4.031,2.064,7.579,5.211,9.67c-1.921-0.059-3.729-0.593-5.312-1.45c0,0.035,0,0.087,0,0.136c0,5.633,4.04,10.323,9.395,11.391	c-0.979,0.268-2.013,0.417-3.079,0.417c-0.757,0-1.494-0.086-2.208-0.214c1.491,4.603,5.817,7.968,10.942,8.067	c-4.01,3.109-9.06,4.971-14.552,4.971c-0.949,0-1.876-0.054-2.793-0.165C10.012,54.074,16.173,56,22.786,56	c21.549,0,33.337-17.696,33.337-33.047c0-0.503-0.016-1.004-0.04-1.499C58.384,19.83,60.366,17.78,61.932,15.439"></path></svg>
+      </a>
+  
+  
+      <!---for github-->
+  
+      <a href="https://github.com">
+        <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="24" height="24"
+  viewBox="0 0 16 16"
+  style=" fill:#000000;"><path d="M 7.5 1 C 3.910156 1 1 3.90625 1 7.488281 C 1 10.355469 2.863281 12.789063 5.445313 13.648438 C 5.769531 13.707031 6 13.375 6 13.125 C 6 12.972656 6.003906 12.789063 6 12.25 C 4.191406 12.640625 3.625 11.375 3.625 11.375 C 3.328125 10.625 2.96875 10.410156 2.96875 10.410156 C 2.378906 10.007813 3.011719 10.019531 3.011719 10.019531 C 3.664063 10.0625 4 10.625 4 10.625 C 4.5 11.5 5.628906 11.414063 6 11.25 C 6 10.851563 6.042969 10.5625 6.152344 10.378906 C 4.109375 10.019531 2.996094 8.839844 3 7.207031 C 3.003906 6.242188 3.335938 5.492188 3.875 4.9375 C 3.640625 4.640625 3.480469 3.625 3.960938 3 C 5.167969 3 5.886719 3.871094 5.886719 3.871094 C 5.886719 3.871094 6.453125 3.625 7.496094 3.625 C 8.542969 3.625 9.105469 3.859375 9.105469 3.859375 C 9.105469 3.859375 9.828125 3 11.035156 3 C 11.515625 3.625 11.355469 4.640625 11.167969 4.917969 C 11.683594 5.460938 12 6.210938 12 7.207031 C 12 8.839844 10.890625 10.019531 8.851563 10.375 C 8.980469 10.570313 9 10.84375 9 11.25 C 9 12.117188 9 12.910156 9 13.125 C 9 13.375 9.226563 13.710938 9.558594 13.648438 C 12.140625 12.785156 14 10.355469 14 7.488281 C 14 3.90625 11.089844 1 7.5 1 Z"></path></svg>
+      </a>
+
+      <!----FOR FACEBOOK-->
+      <a href="">
+        <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="24" height="24"
+viewBox="0 0 50 50"
+style=" fill:#000000;">    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path></svg>
+      </a>
+    
+
+  </div>
+</footer>
+
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+<script src="./script.js"></script>
+
+
   </body>
 </html>
