@@ -36,7 +36,7 @@ cancelBtn.addEventListener("click", Mobilemenu);
 
 console.log(orderNumber);
 
-//FUNCTIONALITY FOR ADDING COUNT, three spans having same class
+//functionality for adding count, three spans having same class
 let count = 0;
 function handlerAdd(params) {
   let [a, b, c] = orderNumber;
@@ -49,7 +49,7 @@ function handlerAdd(params) {
 
 addItem.addEventListener("click", handlerAdd);
 
-//FUNCTINAITY FOR SUBSTRCACTING COUNT three element with same id
+//functionality for substracting count three element with same id
 function handlerSubstract(params) {
   let [a, b, c] = orderNumber;
   count--;
@@ -71,18 +71,14 @@ function cartHandle(params) {
     modal.classList.remove("hidden");
     emptyCartMsg.classList.add("hidden");
     checkOutBtn.classList.remove("hidden");
-    // Number(total.innerHTML) = price.value * orderNumber;
-    //total.innerHTML = price.value * orderNumber;
   } else if (count < 0) {
     modal.classList.add("hidden");
     checkOutBtn.classList.add("hidden");
-    //Number(total.innerHTML) = price.value * orderNumber;
-    //total.innerHTML = price.value * orderNumber;
   }
 }
 addItem.addEventListener("click", cartHandle);
 
-//FUNCTIONALITY /ICON TO DELETE WHAT IS IN CART
+//function and icon for delete
 
 function deleteitem(params) {
   count = 0;
