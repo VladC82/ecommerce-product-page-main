@@ -7,9 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  <!--<link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />-->
+
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="script.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -277,29 +277,29 @@
               <span class="" id="price">125.00</span>
               <span class="cartnumber">0</span>
               <span class="font-bold" id="total">375.00</span>
-              <input class="cart-quantity-input" type="number" value="2" </div>
             </div>
-
-            <button class="mt-2" id="delete">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24"
-                style="fill: #000000">
-                <path
-                  d="M 10 2 L 9 3 L 3 3 L 3 5 L 4.109375 5 L 5.8925781 20.255859 L 5.8925781 20.263672 C 6.023602 21.250335 6.8803207 22 7.875 22 L 16.123047 22 C 17.117726 22 17.974445 21.250322 18.105469 20.263672 L 18.107422 20.255859 L 19.890625 5 L 21 5 L 21 3 L 15 3 L 14 2 L 10 2 z M 6.125 5 L 17.875 5 L 16.123047 20 L 7.875 20 L 6.125 5 z">
-                </path>
-              </svg>
-            </button>
           </div>
 
-          <div class="text-xl font-kumbh mx-auto p-14" id="emptymessage">
-            <h2>your cart is empty</h2>
-          </div>
-
-          <div class="bg-orange w-11/12 text-center mx-auto py-4 rounded-lg hidden" id="checkout">
-            <button class="text-white text-xl font-kumbh font-bold">
-              Checkout
-            </button>
-          </div>
+          <button class="mt-2" id="delete">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24"
+              style="fill: #000000">
+              <path
+                d="M 10 2 L 9 3 L 3 3 L 3 5 L 4.109375 5 L 5.8925781 20.255859 L 5.8925781 20.263672 C 6.023602 21.250335 6.8803207 22 7.875 22 L 16.123047 22 C 17.117726 22 17.974445 21.250322 18.105469 20.263672 L 18.107422 20.255859 L 19.890625 5 L 21 5 L 21 3 L 15 3 L 14 2 L 10 2 z M 6.125 5 L 17.875 5 L 16.123047 20 L 7.875 20 L 6.125 5 z">
+              </path>
+            </svg>
+          </button>
         </div>
+
+        <div class="text-xl font-kumbh mx-auto p-14" id="emptymessage">
+          <h2>your cart is empty</h2>
+        </div>
+
+        <div class="bg-orange w-11/12 text-center mx-auto py-4 rounded-lg hidden" id="checkout">
+          <button class="text-white text-xl font-kumbh font-bold">
+            Checkout
+          </button>
+        </div>
+      </div>
     </main>
   </div>
 
@@ -307,7 +307,6 @@
     <h class="bg-orange rounded-full px-2 py- h-6 cartnumber">0</h>
   </div>
 
-  <!--OVELAY DIV-->
   <div class="absolute w-full h-full top-0 left-0 bg-blackrgba hidden backdrop-blur-sm z-20" id="overlay"></div>
 
   <footer class="mt-6">
@@ -319,7 +318,6 @@
 
     <div class="flex justify-center space-x-4 mt-2 pb-12">
       <a href="https://twitter.com">
-        <!--FOR TWITTER-->
         <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
           viewBox="0 0 64 64" style="fill: #000000">
           <path
@@ -328,7 +326,6 @@
         </svg>
       </a>
 
-      <!---for github-->
 
       <a href="https://github.com">
         <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
@@ -339,8 +336,7 @@
         </svg>
       </a>
 
-      <!----FOR FACEBOOK-->
-      <a href="">
+      <a href="https://facebook.com">
         <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
           viewBox="0 0 50 50" style="fill: #000000">
           <path
@@ -352,8 +348,8 @@
   </footer>
 
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-
   <script src="./script.js"></script>
+
 </body>
 
 </html>
